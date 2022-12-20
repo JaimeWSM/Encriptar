@@ -1,0 +1,242 @@
+body{
+    position: relative;
+    background: #e5e5e5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+#txt-ingreso{
+    position: absolute;
+    width: 600px;
+    height: 560px;
+    left: 240px;
+    top: 168px;
+    font-size: 32px;
+    color: #0A3871;
+    background: #e5e5e5;
+    border: none;
+    resize: none;
+}
+#txt-ingreso:focus{
+    outline: none;
+    color: #0A3871;
+}
+.salida{
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    left: 1000px;
+    top: 40px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+    border-radius: 32px;
+}
+.salida img{
+    width: 300px;
+    margin: 150px 50px 30px 50px;
+}
+.salida h2{
+    width: 260px;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 70px 20px 70px;
+}
+#ocultar p{
+    display: block;
+    width: 260px;
+    text-align: center;
+    font-size: 17px;
+    margin: 20px 70px 10px 70px;
+}
+#aparecer{
+    display: none;
+}
+#txt-salida{
+    width: 330px;
+    height: 620px;
+    margin: 50px 35px 30px 35px;
+    font-size: 24px;
+    resize: none;
+    border: none;
+}
+#txt-salida:focus{
+    outline: none;
+}
+#btn-copiar{
+    width: 320px;
+    height: 50px;
+    border-radius: 24px;
+    margin: 20px 35px;
+}
+.advertencia{
+    position: absolute;
+    align-items: center;
+    left: 250px;
+    top: 750px;
+    width: 400px;
+    height: 20px;
+    margin: 20px 0px 40px 0px;
+    font-size: 16px;
+    color: #495057;
+    opacity: 0.95;
+
+}
+.advertencia img,p{
+    display: inline;
+    width: 16px;
+    height: 16px;
+}
+.advertencia img{
+    opacity: 1;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 50px;
+    left: 240px;
+    top: 800px;
+}
+.botones #btn-encriptar{
+    width: 328px;
+    height: 50px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 24px;
+    background: #0A3871;
+    flex: none;
+    font-size: 14px;
+}
+#btn-encriptar:hover{
+    font-size: 15px;
+    background: #052245;
+}
+.botones #btn-desencriptar{
+    width: 328px;
+    height: 50px;
+    color: #0A3871;
+    text-align: center;
+    border-radius: 24px;
+    background: #d8dfe8;
+    flex: none;
+    font-size: 14px;
+}
+#btn-desencriptar:hover{
+    font-size: 15px;
+    background: #9da2a9;
+}
+.botonesextras{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 50px;
+    left: 240px;
+    top: 860px;
+}
+.botonesextras #btn-convertir{
+    width: 328px;
+    height: 50px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 24px;
+    background: #0A3871;
+    flex: none;
+    font-size: 14px;
+}
+#btn-convertir:hover{
+    font-size: 15px;
+    background: #052245;
+}
+.botonesextras #btn-limpiar{
+    width: 328px;
+    height: 50px;
+    color: #0A3871;
+    text-align: center;
+    border-radius: 24px;
+    background: #d8dfe8;
+    flex: none;
+    font-size: 14px;
+}
+#btn-limpiar:hover{
+    font-size: 15px;
+    background: #9da2a9;
+}
+@media screen and (max-width:480px){
+    body{
+        text-align: center;
+        width: 100%;
+    }
+    .logo{
+        display: block;
+        position: static;
+        text-align: center;
+        width: 20%;
+        height: 10px;
+        margin: 10px 0px 30px 0px;
+    }
+    .logo img{
+        width: 80%;
+        height: 30px;
+    }
+    .botones,.botonesextras{
+        text-align: center;
+        margin: 70px auto;
+        display: block;
+        position: static;
+        width: 80%;
+        height: 40px;
+    }
+    .advertencia{
+        margin: 10px 0px 10px;
+        display: block;
+        position: static;
+    }
+    #txt-ingreso,#txt-salida{
+        width: 100%;
+        display: block;
+        position: static;
+        margin: 10px 0px 10px;
+        height: 20%;
+        font-size: 28px;
+    }
+    .salida{
+        width: 100%;
+        text-align: center;
+        display: block;
+        position: static;
+        height: 20%;
+    }
+    .salida #ocultar,.salida img,.salida h2,.salida p{
+        width: 80%;
+        text-align: center;
+        position: static;
+        height: 20%;
+
+    }
+    .salida #aparecer{
+        display: none;
+        width: 80%;
+        text-align: center;
+        position: static;
+        height: 20%;
+        margin: 40px 15px;
+    }
+    
+}
