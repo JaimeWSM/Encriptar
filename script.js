@@ -1,5 +1,5 @@
-var vocales=["a","e","i","o","u"];
-var rempl=["ai","enter","imes","ober","ufat"];
+const vocales=["a","e","i","o","u"];
+const rempl=["ai","enter","imes","ober","ufat"];
 
 function ocultar(id){
     let division=document.querySelector(id);
