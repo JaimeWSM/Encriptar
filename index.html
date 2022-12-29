@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"&gt>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <section class="logo">
+            <img src="imagenes/Logo.png">
+        </section>
+        <section class="contenido">
+            <div id="ingreso">
+                <div>
+                    <textarea id="txt-ingreso" placeholder="Ingresar texto"></textarea>
+                </div>
+                <div id="advertencia">
+                    <img src="imagenes/advertencia.png"><p id="men">Ingrese solo minúsculas</p>
+                </div>
+                <div id="botones">
+                    <input id="btn-encriptar" type="button" value="Encriptar">
+                    <input id="btn-desencriptar" type="button" value="Desencriptar">
+                </div>
+            </div>
+            <div id="salida">
+                <div id="resultado">
+                    <textarea id="txt-salida"></textarea>
+                    <input id="btn-copiar" type="button" value="Copiar">
+                </div>
+                <div id="mensajeinicio">
+                    <img src="imagenes/Muñeco.png">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingrese el texto que desea encriptar o desencriptar</p>
+                </div>
+            </div>
+        </section>
+        <script src="script1.js"></script>
+    </body>
+</html>
