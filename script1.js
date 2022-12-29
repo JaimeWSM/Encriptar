@@ -7,7 +7,7 @@ const vocales={"e":"enter","i":"imes","a":"ai","o":"ober","u":"ufat"};
 const men=document.querySelector("#men");
 
 function validarTexto(texto){
-    let caracteres=/[^a-zA-Z0-9]/g;
+    let caracteres=/[^a-zA-Z0-9 ]/g;
     let mayusculas=/[A-Z]/g;
     let vacio="";
     if(texto.match(caracteres) || texto.match(mayusculas)){
